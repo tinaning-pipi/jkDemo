@@ -1,0 +1,18 @@
+<!-- 
+页面的.json只能设置 window 相关的配置项，以决定本页面的窗口表现，所以无需写 window 这个键。
+
+<wxs src="../../utils/util.wxs" module="tools" />
+<scroll-view scroll-y style="height: 80%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view wx:for="{{listA}}" wx:for-item="pi" wx:for-index="i">
+<view wx:if="{{i%2==0}}" id="{{pi.id}}" class="bc_green">
+<view class="flex-item1">{{pi.name}}</view><view class="flex-item2"> {{tools.getTime(pi.time)}}</view>
+</view>
+<view wx:else id="{{pi.id}}" class="bc_gray">
+<view class="flex-item1">{{pi.name}}</view><view class="flex-item2"> {{tools.getTime(pi.time)}}</view>
+</view>
+</view>
+  </scroll-view>
+-->
+  
+<import src="../templates/modul"/>
+<template is="proList" data="{{listA}}"/>

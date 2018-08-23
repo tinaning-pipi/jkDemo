@@ -1,0 +1,16 @@
+<view >
+<picker bindchange="getCom" value="{{index}}" range="{{comList}}" range-key="com">
+    <view class="picker">
+      快递公司：{{comList[index].com}}
+    </view>
+  </picker>
+<view class='view1'>
+     <input placeholder="请输入快递查询单号" auto-focus bindinput='chgInput'/>
+     <icon type="search" bindtap='getExpress'/>
+</view>
+<scroll-view scroll-y="true" style='height:200px'>
+<block wx:for="{{expList}}" wx:for-item="exp">
+{{exp.datetime}} {{exp.remark}}
+</block>
+</scroll-view>
+</view>

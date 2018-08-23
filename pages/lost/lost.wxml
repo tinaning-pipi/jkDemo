@@ -1,0 +1,2 @@
+<import src="../templates/modul"/>
+<template is="proList" data="{{listA}}"/>

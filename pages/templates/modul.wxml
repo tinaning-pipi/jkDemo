@@ -1,0 +1,20 @@
+<template name="temp1">
+<view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+
+<template name="proList">
+<wxs src="../../utils/util.wxs" module="tools" />
+<scroll-view scroll-y style="height: 80%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+<view wx:for="{{listA}}" wx:for-item="pi" wx:for-index="i">
+<view wx:if="{{i%2==0}}" id="{{pi.id}}" class="bc_green">
+<text class="flex-item1">{{pi.name}}</text><text class="flex-item2"> {{tools.getTime(pi.time)}}</text>
+</view>
+<view wx:else id="{{pi.id}}" class="bc_gray">
+<text class="flex-item1">{{pi.name}}</text><text class="flex-item2"> {{tools.getTime(pi.time)}}</text>
+</view>
+</view>
+  </scroll-view>
+</template>

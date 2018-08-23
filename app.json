@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/lookfor/lookfor",
+    "pages/express/express",
+    "pages/lost/lost",
+    "pages/my/my",
+    "pages/product/product",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "不能丢",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/lookfor/lookfor",
+      "text":"寻物启事",
+      "iconPath":"img/11.png",
+      "selectedIconPath":"img/12.png"
+    },
+    {
+      "pagePath": "pages/lost/lost",
+      "text": "失物招领",
+      "iconPath": "img/21.png",
+      "selectedIconPath": "img/22.png"
+    },
+    {
+      "pagePath": "pages/express/express",
+      "text": "查快递",
+      "iconPath": "img/31.png",
+      "selectedIconPath": "img/32.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "img/41.png",
+      "selectedIconPath": "img/42.png"
+    }]
+  }
+}

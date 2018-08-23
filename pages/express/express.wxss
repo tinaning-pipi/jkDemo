@@ -1,0 +1,12 @@
+/* pages/express/express.wxss */
+input{
+  border: 1px solid brown;
+  height: 100%;
+  width:80%
+}
+.view1{
+  flex-direction: row;
+  display: flex;
+  vertical-align: center;
+  height: 30px;
+}

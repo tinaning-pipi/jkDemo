@@ -1,0 +1,16 @@
+var getTime= function(sj) {
+  var a = getDate(sj);
+  var b = getDate();
+
+  var total = (b.getTime() - a.getTime()) / (1000 * 60 * 60);//相差小时数
+  if (total < 24 & total>1) {
+    return Math.floor(total) + '小时前';
+  }else if(total<1){
+    return Math.floor(total*60)+'分钟前';
+  } else {
+    return (a.getMonth()+1) + '-' + a.getDate();
+  }
+}
+module.exports = {
+  getTime: getTime
+};
