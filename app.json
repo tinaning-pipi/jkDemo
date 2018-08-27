@@ -9,14 +9,15 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3B97FF",
     "navigationBarTitleText": "不能丢",
-    "navigationBarTextStyle":"black"
+    
+    "navigationBarTextStyle":"black "
   },
   "tabBar":{
     "list":[{
       "pagePath":"pages/lookfor/lookfor",
-      "text":"寻物启事",
+      "text":"大厅",
       "iconPath":"img/11.png",
       "selectedIconPath":"img/12.png"
     },

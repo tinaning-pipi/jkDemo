@@ -1,2 +1,10 @@
+<view class="list_3" >
+          <ul class="fun_list" >
+          <li class="fun_selected">寻物启事</li>
+				<li>失物招领</li>
+				<li>寻人启事</li>
+				<li>感谢信</li>
+          </ul>
+     </view>
 <import src="../templates/modul"/>
 <template is="proList" data="{{listA}}"/>
