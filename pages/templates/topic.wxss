@@ -1,0 +1,28 @@
+.topicTop{
+  border-top: thin solid #cfc9c9;
+  border-bottom: thin solid #cfc9c9;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  box-shadow: #cfc9c9 0 0 1px; 
+}
+
+.topicItem{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  border-bottom: thin solid #cfc9c9;
+}
+.topicInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.topicNic{
+  color: #c4bfbf;
+}
+.topicTime{
+  color: #d8d5d5;
+}
