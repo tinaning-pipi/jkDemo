@@ -1,20 +1,30 @@
-<template name="temp1">
-<view>
+<template name="message">
+<!--留言框-->
+  <view>
     <text> {{index}}: {{msg}} </text>
     <text> Time: {{time}} </text>
   </view>
+  <!--留言列表-->
+  
 </template>
 
 <template name="proList">
-<wxs src="../../utils/util.wxs" module="tools" />
-<scroll-view scroll-y style="height: 80%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
-<view wx:for="{{listA}}" wx:for-item="pi" wx:for-index="i">
-<view wx:if="{{i%2==0}}" id="{{pi.id}}" class="bc_green">
-<text class="flex-item1">{{pi.name}}</text><text class="flex-item2"> {{tools.getTime(pi.time)}}</text>
-</view>
-<view wx:else id="{{pi.id}}" class="bc_gray">
-<text class="flex-item1">{{pi.name}}</text><text class="flex-item2"> {{tools.getTime(pi.time)}}</text>
-</view>
-</view>
+  <wxs src="../../utils/util.wxs" module="tools" />
+  <scroll-view scroll-y style="height:{{srollHeight}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+    <view class='mainBg'>
+      <view wx:for="{{listA}}" wx:for-item="pi" wx:for-index="i">
+        <!--控制最后一个的样式-->
+        <view id="{{pi.id}}" bindtap='showProd' class="{{listA.length-1==i?'goodsBg goodsBgLast':'goodsBg'}}">
+          <image src='../../img/{{pi.img}}' mode='scaleToFill' class='imageMain' />
+          <view class="goodsTitle">{{tools.getTime(pi.time)+" "+pi.name}}</view>
+          <view class="goodsItem">
+            <image src='../../img/{{pi.img}}' mode='scaleToFill' class='imageNic' />
+            <text class="flex-item1">{{pi.nic}}</text>
+            <image src='../../img/zan.png' mode='aspectFit' class='imagePic' />{{pi.zan}}
+            <image src='../../img/message.png' mode='aspectFit' class='imagePic' />{{pi.message}}
+          </view>
+        </view>
+      </view>
+    </view>
   </scroll-view>
 </template>

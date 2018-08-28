@@ -1,2 +1,14 @@
 <!--pages/product/product.wxml-->
-<text>pages/product/product.wxml</text>
+<image src='../../img/{{proInfo.img}}' mode='scaleToFill' class='imageMain' />
+<view class="goodsItem">
+  <image src='../../img/{{proInfo.img}}' mode='scaleToFill' class='imageNic' />
+  <view style='width:70%'>{{proInfo.nic}}</view>
+  <image src="../../img/zan{{ifZan?'-ck':''}}.png" mode='aspectFit' bindtap='ckZan' class='imagePic' /> {{proInfo.zan}}
+  <image src="../../img/low{{ifLow?'-ck':''}}.png" mode='aspectFit' bindtap='ckLow' class='imagePic' />
+</view>
+<view class='content'>
+  <view class="goodsTitle">{{proInfo.name}}</view>
+  <view class='goodsTime'>{{proInfo.time}}</view>
+  {{proInfo.remark}}
+  <map latitude='{{proInfo.lat}}' longitude='{{proInfo.lng}}' markers="{{markers}}" style='width:100%;height:150px;'></map>
+</view>

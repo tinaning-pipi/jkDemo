@@ -1,1 +1,34 @@
 /* pages/product/product.wxss */
+
+.imageMain{
+  width: 100%;
+  height: 150px;
+}
+.imageNic{
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px 5px 10px;
+  border-radius: 50%;
+}
+.imagePic{
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px 5px 5px;
+}
+.goodsItem{
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  flex-direction: row;
+  font-size: 12px;
+  border-bottom: thin solid #cfc9c9;
+}
+.content{
+  margin: 10px;
+}
+.goodsTitle{
+  font-weight: bold;
+}
+.goodsTime{
+  text-align: right;
+}

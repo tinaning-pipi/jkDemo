@@ -1,10 +1,9 @@
-<view class="list_3" >
-          <ul class="fun_list" >
-          <li class="fun_selected">寻物启事</li>
-				<li>失物招领</li>
-				<li>寻人启事</li>
-				<li>感谢信</li>
-          </ul>
-     </view>
+<view class="fun_list">
+  <ul wx:for="{{listFun}}" wx:for-item="fun" bindtap='chg'>
+    <li id='{{fun.id}}' class="{{dateCurrent==fun.id?'fun_selected':''}}">{{fun.name}}</li>
+  </ul>
+</view>
 <import src="../templates/modul"/>
-<template is="proList" data="{{listA}}"/>
+<view  style='padding-top:30px;'>
+<template is="proList" data="{{listA,srollHeight,showProd}}"/>
+</view>
