@@ -1,11 +1,11 @@
 <template name="message">
-<!--留言框-->
-  <view>
-    <text> {{index}}: {{msg}} </text>
-    <text> Time: {{time}} </text>
-  </view>
+  <!--留言框-->
+  <rich-text></rich-text>
   <!--留言列表-->
-  
+  <view>
+    <text>谁说话 </text>
+    <text> 内容 </text>
+  </view>
 </template>
 
 <template name="proList">

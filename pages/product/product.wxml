@@ -12,3 +12,7 @@
   {{proInfo.remark}}
   <map latitude='{{proInfo.lat}}' longitude='{{proInfo.lng}}' markers="{{markers}}" style='width:100%;height:150px;'></map>
 </view>
+<import src="../templates/modul"/>
+<view  style='padding-top:30px;'>
+<template is="message" data="{{listA,srollHeight,showProd}}"/>
+</view>
