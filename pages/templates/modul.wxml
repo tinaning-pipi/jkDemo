@@ -1,11 +1,20 @@
 <template name="message">
-  <!--留言框-->
-  <rich-text></rich-text>
+  <view class="topicTop">
+  <image src='../../img/message.png' mode='scaleToFill' class='imageNic' />
+  <text style='width:65%'>评论{{topic.length}}</text>
+  <text style='color:#59b1f8'>添加评论</text>
+</view>
   <!--留言列表-->
-  <view>
-    <text>谁说话 </text>
-    <text> 内容 </text>
+  <view wx:for='{{topic}}' wx:for-item="tp">
+  <view class="topicItem">
+  <image src='../../img/{{tp.img}}' mode='scaleToFill' class='imageNic' />
+  <view class='topicInfo'>
+  <text class='topicNic'>{{tp.nic}}</text>
+  <text >{{tp.nr}}</text>
+  <text class='topicTime'>{{tp.sj}}</text>
   </view>
+</view>
+</view>
 </template>
 
 <template name="proList">

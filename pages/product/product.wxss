@@ -1,4 +1,5 @@
 /* pages/product/product.wxss */
+@import "/pages/templates/topic.wxss";
 
 .imageMain{
   width: 100%;

@@ -1,4 +1,4 @@
-@import "../templates/modul.wxss";
+@import "../templates/goodsList.wxss";
 
 .fun_list{
   width: 100%;

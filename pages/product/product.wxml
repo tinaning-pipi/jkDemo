@@ -13,6 +13,6 @@
   <map latitude='{{proInfo.lat}}' longitude='{{proInfo.lng}}' markers="{{markers}}" style='width:100%;height:150px;'></map>
 </view>
 <import src="../templates/modul"/>
-<view  style='padding-top:30px;'>
-<template is="message" data="{{listA,srollHeight,showProd}}"/>
+<view  style='padding-top:5px;'>
+<template is="message" data="{{topic}}"/>
 </view>

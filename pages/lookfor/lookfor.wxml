@@ -3,7 +3,7 @@
     <li id='{{fun.id}}' class="{{dateCurrent==fun.id?'fun_selected':''}}">{{fun.name}}</li>
   </ul>
 </view>
-<import src="../templates/modul"/>
-<view  style='padding-top:30px;'>
-<template is="proList" data="{{listA,srollHeight,showProd}}"/>
+<import src="../templates/modul" />
+<view style='padding-top:30px;'>
+  <template is="proList" data="{{listA,srollHeight,showProd}}" />
 </view>
