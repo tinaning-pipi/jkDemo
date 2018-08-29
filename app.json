@@ -4,14 +4,14 @@
     "pages/lost/lost",
     "pages/my/my",
     "pages/product/product",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/topic/addtopic",
+    "pages/topic/topicList"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#3B97FF",
-    "navigationBarTitleText": "不能丢",
-    
-    "navigationBarTextStyle":"black "
+    "navigationBarTitleText": "丢不下"
   },
   "tabBar":{
     "selectedColor": "#59b1f8",

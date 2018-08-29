@@ -1,0 +1,17 @@
+/* pages/topic/topicList.wxss */
+.topicItem{
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.topicInfo{
+  width: 80%;
+}
+.imageNic{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.imagePic{
+  width: 20px;
+  height: 20px;
+}

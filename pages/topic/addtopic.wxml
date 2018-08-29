@@ -1,0 +1,5 @@
+<!--pages/topic/addtopic.wxml-->
+<form bindsubmit="bindFormSubmit">
+    <textarea placeholder="该帖子内容如何，您有何意见发表？" auto-focus name="textarea" class='area'/>
+    <button form-type="submit" class='subBtn'> 提交评论 </button>
+</form>

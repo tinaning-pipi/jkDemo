@@ -8,7 +8,11 @@
   padding-left: 10px;
   box-shadow: #cfc9c9 0 0 1px; 
 }
-
+.imageWrite{
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px 5px 5px;
+}
 .topicItem{
   display: flex;
   flex-direction: row;
@@ -25,4 +29,17 @@
 }
 .topicTime{
   color: #d8d5d5;
+}
+.showTopicBox{
+  align-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.showTopic{
+  width: 60%;
+  height: 30px;
+  border: 1px solid #0888ff;
+  background-color: #ffffff;
+  color: #0888ff;
+  font-size: 14px;
 }

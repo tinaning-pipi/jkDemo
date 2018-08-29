@@ -1,5 +1,3 @@
-@import "../templates/goodsList.wxss";
-
 .fun_list{
   width: 100%;
   text-align: center;

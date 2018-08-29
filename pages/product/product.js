@@ -83,5 +83,15 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  openWrite:function(){
+    wx.navigateTo({
+      url: '../topic/addtopic',
+    })
+  },
+  openTopicList:function(){
+    wx.navigateTo({
+      url: '../topic/topicList',
+    })
   }
 })

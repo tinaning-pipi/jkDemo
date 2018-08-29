@@ -1,4 +1,7 @@
 /**app.wxss**/
+@import "/pages/templates/topic.wxss";
+@import "/pages/templates/goodsList.wxss";
+
 .container {
   height: 100%;
   display: flex;

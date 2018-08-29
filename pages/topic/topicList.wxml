@@ -1,0 +1,16 @@
+<!--pages/topic/topicList.wxml-->
+<view wx:for='{{topic}}' wx:for-item="tp" wx:for-index='i'>
+    <view class="topicItem">
+      <image src='../../img/{{tp.img}}' mode='scaleToFill' class='imageNic' />
+      <view class='topicInfo'>
+        <text class='topicNic'>{{tp.nic}}</text>
+        <text>{{tp.nr}}</text>
+        <text class='topicTime'>{{tp.sj}}</text>
+      </view>
+      <image id='{{i}}' src="/img/zan{{tp.zan=='1'?'-ck':''}}.png" mode='aspectFit' bindtap='ckZan' class='imagePic' />
+      <image id='{{i}}' src="/img/message.png" mode='aspectFit' bindtap='reBack' class='imagePic' />
+    </view>
+  </view>
+  <modal hidden="{{hiddenmodalput}}" title="回复消息" confirm-text="提交" cancel-text="重置" bindcancel="cancel" bindconfirm="confirm">
+    <textarea placeholder="请输入内容" auto-focus name="bkCont"  style='height:80px;width:150px;'/>
+</modal>  
