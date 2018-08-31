@@ -1,3 +1,4 @@
+<!--评论区模板-->
 <template name="message">
   <view class="topicTop">
     <text style='width:65%'>评论</text>
@@ -20,13 +21,14 @@
   </view>
 </template>
 
+<!--物品列表模板-->
 <template name="proList">
   <wxs src="../../utils/util.wxs" module="tools" />
   <scroll-view scroll-y style="height:{{srollHeight}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
     <view class='goodsMainBg'>
-      <view wx:for="{{listA}}" wx:for-item="pi" wx:for-index="i">
+      <view wx:for="{{list}}" wx:for-item="pi" wx:for-index="i">
         <!--控制最后一个的样式-->
-        <view id="{{pi.id}}" bindtap='showProd' class="{{listA.length-1==i?'goodsBg goodsBgLast':'goodsBg'}}">
+        <view data-pid='{{pi.id}}' bindtap='showProd' class="{{list.length-1==i?'goodsBg goodsBgLast':'goodsBg'}}">
           <image src='../../img/{{pi.img}}' mode='scaleToFill' class='goodsImg' />
           <view class="goodsTitle">{{tools.getTime(pi.time)+" "+pi.name}}</view>
           <view class="goodsItem">

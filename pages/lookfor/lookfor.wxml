@@ -1,9 +1,28 @@
 <view class="fun_list">
-  <ul wx:for="{{listFun}}" wx:for-item="fun" bindtap='chg'>
-    <li id='{{fun.id}}' class="{{dateCurrent==fun.id?'fun_selected':''}}">{{fun.name}}</li>
+  <ul wx:for="{{listFun}}" wx:for-item="fun" bindtap='chg' wx:for-index='i'>
+    <li id='{{i}}' class="{{dateCurrent==i?'fun_selected':''}}">{{fun.name}}</li>
   </ul>
 </view>
 <import src="../templates/modul" />
-<view style='padding-top:30px;'>
-  <template is="proList" data="{{listA,srollHeight,showProd}}" />
-</view>
+<swiper current="{{dateCurrent}}" bindchange="swiperChange" duration="{{200}}" style='height:{{srollHeight}}px;'>
+  <swiper-item>
+    <view>
+      <template is="proList" data="{{list:listA,srollHeight,showProd}}" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <template is="proList" data="{{list:listB,srollHeight,showProd}}" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <template is="proList" data="{{list:listC,srollHeight,showProd}}" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <template is="proList" data="{{list:listD,srollHeight,showProd}}" />
+    </view>
+  </swiper-item>
+</swiper>

@@ -1,2 +1,7 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class='userInfo'>
+  <image src='/img/{{userInfo.img}}' mode='scaleToFill' class='imageNic' />
+  <text>{{userInfo.nic}}</text>
+</view>
+
+我的，发布 -寻物启事 -寻人启事 -失物招领 -感谢信

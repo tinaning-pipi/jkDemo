@@ -62,5 +62,13 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+/**
+ * 提交评论
+ * 表单提交形式
+ */
+  bindFormSubmit:function(e){
+    var topic=e.detail.value.topic;
+    wx.navigateBack();
   }
 })

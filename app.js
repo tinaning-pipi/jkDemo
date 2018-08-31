@@ -34,7 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: { nic: 'leaves', img:'leaves.png'}
   },
   getRequestData:function(url,data,func){
     wx.request({
