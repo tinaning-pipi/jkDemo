@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/my/my",
     "pages/lookfor/lookfor",
     "pages/lost/lost",
-    "pages/my/my",
     "pages/product/product",
     "pages/login/login",
     "pages/topic/addtopic",
@@ -15,7 +15,13 @@
   },
   "tabBar":{
     "selectedColor": "#59b1f8",
-    "list":[{
+    "list":[
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/41.png",
+        "selectedIconPath": "img/42.png"
+      },{
       "pagePath":"pages/lookfor/lookfor",
       "text":"大厅",      
       "iconPath":"img/11.png",
@@ -26,12 +32,6 @@
       "text": "失物招领",
       "iconPath": "img/21.png",
       "selectedIconPath": "img/22.png"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "img/41.png",
-      "selectedIconPath": "img/42.png"
     }]
   }
 }

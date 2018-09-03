@@ -1,7 +1,23 @@
 <!--pages/my/my.wxml-->
-<view class='userInfo'>
-  <image src='/img/{{userInfo.img}}' mode='scaleToFill' class='imageNic' />
-  <text>{{userInfo.nic}}</text>
-</view>
-
-我的，发布 -寻物启事 -寻人启事 -失物招领 -感谢信
+<block wx:if='{{userInfo==null}}'>
+  <view class='userInfo'>
+    <image src='/img/login.png' mode='scaleToFill' class='imageNic' />
+    <text>登录</text>
+  </view>
+</block>
+<block wx:else>
+  <view class='userInfo'>
+    <image src='/img/{{userInfo.img}}' mode='scaleToFill' class='imageNic' />
+    <text>{{userInfo.nic}}</text>
+  </view>
+  <view class='funcList'>
+    <view class='func'>
+      <image src='/img/deploy.png' mode='scaleToFill' class='funcImg' />
+      <text>发布消息</text>
+    </view>
+    <view class='func'>
+      <image src='/img/thanks.png' mode='scaleToFill' class='funcImg' />
+      <text>感谢信</text>
+    </view>
+  </view>
+</block>
